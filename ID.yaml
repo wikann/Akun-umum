@@ -4,7 +4,7 @@ proxies:
   type: trojan
   server: sg.dogayengvpn.my.id
   port: 443
-  password: fgfgfg
+  password: dba9cbdc-a478-460a-149d586
   udp: true
   sni: clients5.google.com
   skip-cert-verify: true
@@ -18,7 +18,7 @@ proxies:
   type: vmess
   server: sg.dogayengvpn.my.id
   port: 443
-  uuid:  gfgfgfg
+  uuid: ef996436-8b37-43b7-b1596 
   alterId: 0
   cipher: auto
   udp: true
@@ -35,7 +35,7 @@ proxies:
   server: sg.dogayengvpn.my.id
   port: 443
   type: vless
-  uuid: gfgfgfg
+  uuid: 
   cipher: auto
   tls: true
   skip-cert-verify: true
