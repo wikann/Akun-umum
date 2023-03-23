@@ -1,0 +1,48 @@
+proxies:     
+
+- name: AK 🙈
+  type: trojan
+  server: sg.dogayengvpn.my.id
+  port: 443
+  password: fddfgf
+  udp: true
+  sni: clients5.google.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: sg.dogayengvpn.my.id
+       
+- name: AK 😜
+  type: vmess
+  server: sg.dogayengvpn.my.id
+  port: 443
+  uuid:  fdfdfd
+  alterId: 0
+  cipher: auto
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: clients5.google.com
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: sg.dogayengvpn.my.id
+      
+- name: AK 😇
+  server: sg.dogayengvpn.my.id
+  port: 443
+  type: vless
+  uuid: dfdfdf
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: clients5.google.com
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: sg.dogayengvpn.my.id
+  udp: true
