@@ -18,13 +18,13 @@ proxies:
 - name: AK 🐒
   type: vmess
   server: 104.17.3.81
-  port: 443
+  port: 80
   uuid: ef996436-8b37-43b7-b19b-3b1681db6596 
   alterId: 0
   cipher: auto
   udp: true
   skip-cert-verify: true
-  tls: true
+  tls: false
   servername: sg.dogayengvpn.my.id
   network: ws
   ws-opts:
@@ -34,11 +34,11 @@ proxies:
       
 - name: AK 🦍
   server: 104.17.3.81
-  port: 443
+  port: 80
   type: vless
   uuid: cceb7207-f74f-4563-8f2b-6a6ff381d899
   cipher: auto
-  tls: true
+  tls: false
   skip-cert-verify: true
   servername: sg.dogayengvpn.my.id
   network: ws
