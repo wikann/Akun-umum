@@ -2,7 +2,7 @@ proxies:
 
 - name: AK 🤓
   type: trojan
-  server: beacon.liveon.id
+  server: 104.16.53.111
   port: 443
   password: dba9cbdc-a478-460a-b0f8-3bfa8149d586
   udp: true
@@ -17,7 +17,7 @@ proxies:
        
 - name: AK 🐒
   type: vmess
-  server: beacon.liveon.id
+  server: 104.16.53.111
   port: 80
   uuid: ef996436-8b37-43b7-b19b-3b1681db6596 
   alterId: 0
@@ -33,7 +33,7 @@ proxies:
       Host: sg.dogayengvpn.my.id
       
 - name: AK 🦍
-  server: beacon.liveon.id
+  server: 104.16.53.111
   port: 80
   type: vless
   uuid: cceb7207-f74f-4563-8f2b-6a6ff381d899
