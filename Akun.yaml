@@ -6,13 +6,13 @@ proxies:
   port: 443
   password: dba9cbdc-a478-460a-b0f8-3bfa8149d586
   udp: true
-  sni: sg.dogayengvpn.my.id
+  sni: in.dogayengvpn.my.id
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /trojan
     headers:
-      Host: sg.dogayengvpn.my.id      
+      Host: in.dogayengvpn.my.id      
 
        
 - name: AK 🐒
@@ -25,25 +25,25 @@ proxies:
   udp: true
   skip-cert-verify: true
   tls: false
-  servername: sg.dogayengvpn.my.id
+  servername: in.dogayengvpn.my.id
   network: ws
   ws-opts:
     path: /vmess
     headers:
-      Host: sg.dogayengvpn.my.id
+      Host: in.dogayengvpn.my.id
       
 - name: AK 🦍
   server: 104.16.53.111
-  port: 80
+  port: 443
   type: vless
-  uuid: cceb7207-f74f-4563-8f2b-6a6ff381d899
+  uuid: 7d598b8f-f0ef-4d3c-b3ff-2b86fccd2f31
   cipher: auto
-  tls: false
+  tls: true
   skip-cert-verify: true
-  servername: sg.dogayengvpn.my.id
+  servername: in.dogayengvpn.my.id
   network: ws
   ws-opts:
     path: /vless
     headers:
-      Host: sg.dogayengvpn.my.id
+      Host: in.dogayengvpn.my.id
   udp: true
