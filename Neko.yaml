@@ -1,0 +1,86 @@
+---
+proxies:
+
+- name: TJ
+  type: trojan
+  server: 104.22.4.240
+  port: 443
+  password: c46c1d58-5809-4e93-b8b2-20ba4430c764
+  udp: true
+  sni: in.dogayengvpn.my.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: in.dogayengvpn.my.id
+
+
+- name: VM 80
+  type: vmess
+  server: 104.22.4.240
+  port: 80
+  uuid: ef996436-8b37-43b7-b19b-3b1681db6596 
+  alterId: 0
+  cipher: auto
+  udp: true
+  skip-cert-verify: true
+  tls: false
+  servername: in.dogayengvpn.my.id
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: in.dogayengvpn.my.id
+
+- name: VM 443
+  type: vmess
+  server: 104.22.4.240
+  port: 443
+  uuid: ef996436-8b37-43b7-b19b-3b1681db6596 
+  alterId: 0
+  cipher: auto
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: in.dogayengvpn.my.id
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: in.dogayengvpn.my.id
+      
+- name: VL 443
+  server: 104.22.4.240
+  port: 443
+  type: vless
+  uuid: 7d598b8f-f0ef-4d3c-b3ff-2b86fccd2f31
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: in.dogayengvpn.my.id
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: in.dogayengvpn.my.id
+  udp: true
+
+
+- name: VL 80
+  server: 104.22.4.240
+  port: 80
+  type: vless
+  uuid: 7d598b8f-f0ef-4d3c-b3ff-2b86fccd2f31
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  servername: in.dogayengvpn.my.id
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: in.dogayengvpn.my.id
+  udp: true
+
+
